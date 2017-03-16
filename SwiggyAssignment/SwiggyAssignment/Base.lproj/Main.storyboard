@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" secondItem="lrr-MZ-Dar" secondAttribute="height" multiplier="94:201" id="eFM-vF-XdH"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCellIdentifier" rowHeight="50" id="xyR-Ke-PXQ" customClass="SwiggyCategoryCell" customModule="SwiggyAssignment" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwiggyCategoryCell" rowHeight="50" id="xyR-Ke-PXQ" customClass="SwiggyCategoryCell" customModule="SwiggyAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="187.5" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xyR-Ke-PXQ" id="DRb-L2-OQK">
@@ -49,7 +49,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryNameLabel" destination="hMo-j9-7eh" id="jvG-uu-tGk"/>
                                             <outlet property="iboCategoryNameLabel" destination="hMo-j9-7eh" id="GG7-3S-BSh"/>
                                         </connections>
                                     </tableViewCell>
@@ -63,7 +62,7 @@
                                 <rect key="frame" x="187.5" y="64" width="187.5" height="401"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VarientCellIdentifier" id="BVc-Wn-FAg" customClass="SwiggyVariantCell" customModule="SwiggyAssignment" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwiggyVarientCell" id="BVc-Wn-FAg" customClass="SwiggyVariantCell" customModule="SwiggyAssignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="187.5" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BVc-Wn-FAg" id="9vj-bh-46e">
@@ -84,7 +83,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="iboVarientNameLabel" destination="KMC-Hl-Z2a" id="hWS-Y0-sZw"/>
-                                            <outlet property="varientNameLabel" destination="KMC-Hl-Z2a" id="olO-mc-aZy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -162,6 +160,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9YZ-Sw-mMm"/>
+                    <connections>
+                        <outlet property="iboCategoryListingTableView" destination="lrr-MZ-Dar" id="cLQ-9Z-dj8"/>
+                        <outlet property="iboNameLabel" destination="md2-jt-5PP" id="0iv-ft-asE"/>
+                        <outlet property="iboPriceLabel" destination="J8l-Ys-O7T" id="g99-d6-Fga"/>
+                        <outlet property="iboStockLabel" destination="zDs-7m-utc" id="NmP-cB-CtB"/>
+                        <outlet property="iboVarientListingTableView" destination="5Gm-Cq-mkE" id="zTk-Gc-Kwg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
