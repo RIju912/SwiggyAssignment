@@ -9,8 +9,17 @@
 /* Begin PBXBuildFile section */
 		3EA606831E7A665500D42E37 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3EA606821E7A665500D42E37 /* .gitignore */; };
 		3EA606881E7A672A00D42E37 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606871E7A672A00D42E37 /* Reachability.m */; };
+		3EA6068B1E7A684600D42E37 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA6068A1E7A684600D42E37 /* HomeVC.swift */; };
+		3EA6068D1E7A687800D42E37 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA6068C1E7A687800D42E37 /* SystemConfiguration.framework */; };
+		3EA606951E7A69EB00D42E37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606941E7A69EB00D42E37 /* Constants.swift */; };
+		3EA606971E7A6AF700D42E37 /* RestFulServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606961E7A6AF700D42E37 /* RestFulServices.swift */; };
+		3EA6069B1E7A6B7500D42E37 /* SwiggyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA6069A1E7A6B7500D42E37 /* SwiggyCategoryCell.swift */; };
+		3EA6069D1E7A6B8900D42E37 /* SwiggyVariantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA6069C1E7A6B8900D42E37 /* SwiggyVariantCell.swift */; };
+		3EA606A21E7A6C8700D42E37 /* SwiggyExclusionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606A11E7A6C8700D42E37 /* SwiggyExclusionList.swift */; };
+		3EA606A51E7A6CE000D42E37 /* SwiggyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606A41E7A6CE000D42E37 /* SwiggyCategory.swift */; };
+		3EA606A71E7A6CED00D42E37 /* SwiggyVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606A61E7A6CED00D42E37 /* SwiggyVariants.swift */; };
+		3EA606A91E7A6CFC00D42E37 /* SwiggyBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA606A81E7A6CFC00D42E37 /* SwiggyBaseModel.swift */; };
 		3EE639E41E7A63A500C5262B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE639E31E7A63A500C5262B /* AppDelegate.swift */; };
-		3EE639E61E7A63A500C5262B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE639E51E7A63A500C5262B /* ViewController.swift */; };
 		3EE639E91E7A63A500C5262B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE639E71E7A63A500C5262B /* Main.storyboard */; };
 		3EE639EB1E7A63A500C5262B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE639EA1E7A63A500C5262B /* Assets.xcassets */; };
 		3EE639EE1E7A63A500C5262B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE639EC1E7A63A500C5262B /* LaunchScreen.storyboard */; };
@@ -23,9 +32,18 @@
 		3EA606851E7A672A00D42E37 /* SwiggyAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiggyAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
 		3EA606861E7A672A00D42E37 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3EA606871E7A672A00D42E37 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3EA6068A1E7A684600D42E37 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3EA6068C1E7A687800D42E37 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3EA606941E7A69EB00D42E37 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3EA606961E7A6AF700D42E37 /* RestFulServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestFulServices.swift; sourceTree = "<group>"; };
+		3EA6069A1E7A6B7500D42E37 /* SwiggyCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyCategoryCell.swift; sourceTree = "<group>"; };
+		3EA6069C1E7A6B8900D42E37 /* SwiggyVariantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyVariantCell.swift; sourceTree = "<group>"; };
+		3EA606A11E7A6C8700D42E37 /* SwiggyExclusionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyExclusionList.swift; sourceTree = "<group>"; };
+		3EA606A41E7A6CE000D42E37 /* SwiggyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyCategory.swift; sourceTree = "<group>"; };
+		3EA606A61E7A6CED00D42E37 /* SwiggyVariants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyVariants.swift; sourceTree = "<group>"; };
+		3EA606A81E7A6CFC00D42E37 /* SwiggyBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiggyBaseModel.swift; sourceTree = "<group>"; };
 		3EE639E01E7A63A500C5262B /* SwiggyAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiggyAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE639E31E7A63A500C5262B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		3EE639E51E7A63A500C5262B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EE639E81E7A63A500C5262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EE639EA1E7A63A500C5262B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		3EE639ED1E7A63A500C5262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA6068D1E7A687800D42E37 /* SystemConfiguration.framework in Frameworks */,
 				B12350130F390715D8615376 /* Pods_SwiggyAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +86,109 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		3EA606891E7A683300D42E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EA6068A1E7A684600D42E37 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EA6068E1E7A68EE00D42E37 /* ViewAndStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606901E7A694D00D42E37 /* TableViewCell */,
+				3EA6068F1E7A693200D42E37 /* Storyboard */,
+			);
+			path = ViewAndStoryboard;
+			sourceTree = "<group>";
+		};
+		3EA6068F1E7A693200D42E37 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3EE639E71E7A63A500C5262B /* Main.storyboard */,
+				3EE639EC1E7A63A500C5262B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EA606901E7A694D00D42E37 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606991E7A6B3900D42E37 /* SwiggyVariantCell */,
+				3EA606981E7A6B2300D42E37 /* SwiggyCategoryCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		3EA606911E7A695E00D42E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606A31E7A6CD000D42E37 /* SwiggyCategoryAndVariants */,
+				3EA606A01E7A6C5000D42E37 /* SwiggyExclusionList */,
+				3EA6069E1E7A6C1600D42E37 /* SwiggyBaseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EA606921E7A698500D42E37 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606941E7A69EB00D42E37 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3EA606931E7A69A800D42E37 /* RESTServices */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606961E7A6AF700D42E37 /* RestFulServices.swift */,
+			);
+			path = RESTServices;
+			sourceTree = "<group>";
+		};
+		3EA606981E7A6B2300D42E37 /* SwiggyCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EA6069A1E7A6B7500D42E37 /* SwiggyCategoryCell.swift */,
+			);
+			name = SwiggyCategoryCell;
+			path = SwiggyCategory;
+			sourceTree = "<group>";
+		};
+		3EA606991E7A6B3900D42E37 /* SwiggyVariantCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EA6069C1E7A6B8900D42E37 /* SwiggyVariantCell.swift */,
+			);
+			path = SwiggyVariantCell;
+			sourceTree = "<group>";
+		};
+		3EA6069E1E7A6C1600D42E37 /* SwiggyBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606A81E7A6CFC00D42E37 /* SwiggyBaseModel.swift */,
+			);
+			path = SwiggyBaseModel;
+			sourceTree = "<group>";
+		};
+		3EA606A01E7A6C5000D42E37 /* SwiggyExclusionList */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606A11E7A6C8700D42E37 /* SwiggyExclusionList.swift */,
+			);
+			path = SwiggyExclusionList;
+			sourceTree = "<group>";
+		};
+		3EA606A31E7A6CD000D42E37 /* SwiggyCategoryAndVariants */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606A41E7A6CE000D42E37 /* SwiggyCategory.swift */,
+				3EA606A61E7A6CED00D42E37 /* SwiggyVariants.swift */,
+			);
+			path = SwiggyCategoryAndVariants;
+			sourceTree = "<group>";
+		};
 		3EE639D71E7A63A400C5262B = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +210,13 @@
 		3EE639E21E7A63A500C5262B /* SwiggyAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				3EA606931E7A69A800D42E37 /* RESTServices */,
+				3EA606921E7A698500D42E37 /* Utility */,
+				3EA606911E7A695E00D42E37 /* Model */,
+				3EA6068E1E7A68EE00D42E37 /* ViewAndStoryboard */,
+				3EA606891E7A683300D42E37 /* Controller */,
 				3EA606841E7A671000D42E37 /* Reachability */,
 				3EA606811E7A662D00D42E37 /* AppResources */,
-				3EE639E51E7A63A500C5262B /* ViewController.swift */,
-				3EE639E71E7A63A500C5262B /* Main.storyboard */,
-				3EE639EC1E7A63A500C5262B /* LaunchScreen.storyboard */,
 			);
 			path = SwiggyAssignment;
 			sourceTree = "<group>";
@@ -100,6 +224,7 @@
 		8372AEFAB07414A9784B033C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EA6068C1E7A687800D42E37 /* SystemConfiguration.framework */,
 				61876B49B745A4676E5DD699 /* Pods_SwiggyAssignment.framework */,
 			);
 			name = Frameworks;
@@ -239,9 +364,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE639E61E7A63A500C5262B /* ViewController.swift in Sources */,
+				3EA606A51E7A6CE000D42E37 /* SwiggyCategory.swift in Sources */,
+				3EA6069D1E7A6B8900D42E37 /* SwiggyVariantCell.swift in Sources */,
+				3EA606971E7A6AF700D42E37 /* RestFulServices.swift in Sources */,
+				3EA6068B1E7A684600D42E37 /* HomeVC.swift in Sources */,
 				3EA606881E7A672A00D42E37 /* Reachability.m in Sources */,
+				3EA606A91E7A6CFC00D42E37 /* SwiggyBaseModel.swift in Sources */,
+				3EA606A71E7A6CED00D42E37 /* SwiggyVariants.swift in Sources */,
+				3EA606A21E7A6C8700D42E37 /* SwiggyExclusionList.swift in Sources */,
+				3EA6069B1E7A6B7500D42E37 /* SwiggyCategoryCell.swift in Sources */,
 				3EE639E41E7A63A500C5262B /* AppDelegate.swift in Sources */,
+				3EA606951E7A69EB00D42E37 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +387,7 @@
 				3EE639E81E7A63A500C5262B /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		3EE639EC1E7A63A500C5262B /* LaunchScreen.storyboard */ = {
@@ -262,6 +396,7 @@
 				3EE639ED1E7A63A500C5262B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
