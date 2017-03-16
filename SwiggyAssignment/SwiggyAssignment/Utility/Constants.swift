@@ -9,11 +9,29 @@
 import Foundation
 import UIKit
 
-//MARK: - Constants
+//MARK: - URL Constants
 struct UrlConstants {
     
     static var swiggyAPI = "https://api.myjson.com/bins/3b0u2"
     
+}
+
+//MARK: - App Constants
+struct AppConstants {
+    
+    static var pleaseWait = "Please wait..."
+    static var noInternet = "Sorry, no internet connections available."
+    static var processData = "Processing data..."
+    static var noItem = "Sorry, Item is in the exclusion list."
+    static var categoryCellIdentifier = "SwiggyCategoryCell"
+    static var varientCellIdentifier = "SwiggyVarientCell"
+    
+}
+
+struct APIConstants {
+    static var variants = "variants"
+    static var variantGroups = "variant_groups"
+    static var excludeList = "exclude_list"
 }
 
 //MARK: - Extension

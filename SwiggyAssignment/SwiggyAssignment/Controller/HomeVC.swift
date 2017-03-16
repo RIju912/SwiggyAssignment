@@ -10,24 +10,27 @@ import UIKit
 import SystemConfiguration
 import NVActivityIndicatorView
 
+//MARK: - Reachability 
 var reachability = Reachability()
 
 class HomeVC: UIViewController, NVActivityIndicatorViewable {
 
+    //MARK: - Outlets
     @IBOutlet weak var iboCategoryListingTableView: UITableView!
     @IBOutlet weak var iboVarientListingTableView: UITableView!
-    
     @IBOutlet weak var iboNameLabel: UILabel!
     @IBOutlet weak var iboStockLabel: UILabel!
     @IBOutlet weak var iboPriceLabel: UILabel!
     
+    
+    //MARK: - Variables
     var categoryCollection: SwiggyBaseModel?
     var selectedCategory: SwiggyCategory?
     let size = CGSize(width: 30, height: 30)
     
-    let categoryCellIdentifier = "SwiggyCategoryCell"
-    let varientCellIdentifier = "SwiggyVarientCell"
     
+    
+    //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewSetup()
@@ -37,11 +40,13 @@ class HomeVC: UIViewController, NVActivityIndicatorViewable {
         NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: nil)
     }
     
+    
+    
     //MARK: - View Setup
     func viewSetup(){
         
         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityStatusChanged(_:)), name: .reachabilityChanged, object: nil)
-        startAnimating(size, message: "Please wait...", type: NVActivityIndicatorType(rawValue: 30)!)
+        startAnimating(size, message: AppConstants.pleaseWait, type: NVActivityIndicatorType(rawValue: 30)!)
         updateInterfaceWithCurrent(networkStatus: reachability.currentReachabilityStatus())
     }
     
@@ -54,7 +59,7 @@ class HomeVC: UIViewController, NVActivityIndicatorViewable {
     func updateInterfaceWithCurrent(networkStatus: NetworkStatus) {
         switch networkStatus {
         case NotReachable:
-            self.showAlertMessage("Sorry, no internet connections available.")
+            self.showAlertMessage(AppConstants.noInternet)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
                 self.stopAnimating()
             }
@@ -71,7 +76,7 @@ class HomeVC: UIViewController, NVActivityIndicatorViewable {
     
     func loadAllData(){
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-            NVActivityIndicatorPresenter.sharedInstance.setMessage("Processing data...")
+            NVActivityIndicatorPresenter.sharedInstance.setMessage(AppConstants.processData)
         }
         
         RestFulServices.shared().fetchCategories { (categoryCollection, error) in
@@ -91,6 +96,7 @@ class HomeVC: UIViewController, NVActivityIndicatorViewable {
         }
     }
     
+    //MARK: - Detect Exclusion List
     func isContainedInExclusionList(exclusion: SwiggyExclusionList) -> Bool {
         
         for exclusions in (categoryCollection?.exclusions)! {
@@ -126,6 +132,7 @@ class HomeVC: UIViewController, NVActivityIndicatorViewable {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
+    //MARK: - Collectionview datasources
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView.tag == TableViewTag.categoryTableView {
@@ -145,14 +152,14 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         if tableView.tag == TableViewTag.categoryTableView {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: categoryCellIdentifier, for: indexPath) as! SwiggyCategoryCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.categoryCellIdentifier, for: indexPath) as! SwiggyCategoryCell
             cell.setupCellForCategory(category: (categoryCollection?.categories[indexPath.row])!)
             return cell
             
         }
         else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: varientCellIdentifier, for: indexPath) as! SwiggyVariantCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.varientCellIdentifier, for: indexPath) as! SwiggyVariantCell
             cell.setupCellForVarient(varient: (selectedCategory?.variants[indexPath.row])!)
             
             if nil !=  selectedCategory?.selectedVarient && (selectedCategory?.selectedVarient?.isEqual(selectedCategory?.variants[indexPath.row]))! {
@@ -172,6 +179,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    //MARK: - Collectionview delegates
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -189,7 +197,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             
             if isExcluded {
                 
-                self.showAlertMessage("Sorry, Item is in the exclusion list.")
+                self.showAlertMessage(AppConstants.noItem)
                 
             }
             else {

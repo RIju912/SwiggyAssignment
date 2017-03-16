@@ -54,7 +54,7 @@ class RestFulServices: NSObject {
                         
                         let categoryCollection = SwiggyBaseModel()
                         
-                        if let categoryList = json["variants"]["variant_groups"].array {
+                        if let categoryList = json[APIConstants.variants][APIConstants.variantGroups].array {
                             
                             for categoryJSON in categoryList {
                                 
@@ -65,7 +65,7 @@ class RestFulServices: NSObject {
                             
                         }
                         
-                        if let exclusionList = json["variants"]["exclude_list"].array {
+                        if let exclusionList = json[APIConstants.variants][APIConstants.excludeList].array {
                             
                             var finalExlList = [[SwiggyExclusionList]]()
                             
