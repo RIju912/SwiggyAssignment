@@ -10,6 +10,7 @@ import UIKit
 
 class SwiggyCategoryCell: UITableViewCell {
 
+    //MARK: - Outlets
     @IBOutlet weak var iboCategoryNameLabel: UILabel!
     
     override func awakeFromNib() {
@@ -24,6 +25,7 @@ class SwiggyCategoryCell: UITableViewCell {
         
     }
     
+    //MARK: - Cell Setup
     func setupCellForCategory(category: SwiggyCategory)  {
         
         iboCategoryNameLabel.text = category.name

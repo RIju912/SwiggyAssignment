@@ -10,6 +10,7 @@ import UIKit
 
 class SwiggyVariantCell: UITableViewCell {
 
+    //MARK: - Outlets
     @IBOutlet weak var iboVarientNameLabel: UILabel!
     
     override func awakeFromNib() {
@@ -18,6 +19,7 @@ class SwiggyVariantCell: UITableViewCell {
         
     }
     
+    //MARK: - Setup Cell
     func setupCellForVarient(varient: SwiggyVariants)  {
         
         iboVarientNameLabel.text = varient.name
