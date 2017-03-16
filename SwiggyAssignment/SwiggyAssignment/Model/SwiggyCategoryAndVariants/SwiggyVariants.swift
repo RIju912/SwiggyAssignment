@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class SwiggyVariants: NSObject {
     
+    //MARK: - Model Class Variables
     var name: String?
     var price: Int?
     var default_value: Int?
@@ -18,6 +19,7 @@ class SwiggyVariants: NSObject {
     var inStock: Int?
     var isVeg: Int?
     
+    //MARK: - Init
     init (json: JSON) {
         
         super.init()

@@ -11,12 +11,14 @@ import SwiftyJSON
 
 class SwiggyCategory: NSObject {
     
+    //MARK: - Model Class Variables
     var groupID: String?
     var name: String?
     var variants = [SwiggyVariants]()
     var selectedVarient: SwiggyVariants?
     var selectedVarientExclusion: SwiggyExclusionList?
     
+    //MARK: - Init
     init (json: JSON) {
         
         super.init()

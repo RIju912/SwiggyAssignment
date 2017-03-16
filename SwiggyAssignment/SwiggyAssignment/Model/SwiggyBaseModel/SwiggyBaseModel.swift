@@ -10,6 +10,7 @@ import UIKit
 
 class SwiggyBaseModel: NSObject {
 
+    //MARK: - Data Source Model
     var categories = [SwiggyCategory]()
     var exclusions = [[SwiggyExclusionList]]()
     

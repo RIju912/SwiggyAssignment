@@ -13,7 +13,7 @@ import SwiftyJSON
 
 class RestFulServices: NSObject {
     
-    
+    //MARK: - Shared Instance
     private static var sharedNetworkManager: RestFulServices = {
         
         let networkManager = RestFulServices()
@@ -27,6 +27,8 @@ class RestFulServices: NSObject {
         
     }
     
+    
+    //MARK: - Main API Call
     func fetchCategories(_ completion:@escaping ((SwiggyBaseModel?, Error?) -> Void)) {
         
         let getCategoriesAPI = UrlConstants.swiggyAPI

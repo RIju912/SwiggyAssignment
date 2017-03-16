@@ -11,9 +11,11 @@ import SwiftyJSON
 
 class SwiggyExclusionList: NSObject {
     
+    //MARK: - Model Class Variables
     var groupID: String?
     var variationID: String?
     
+    //MARK: - Init
     init (json: JSON) {
         
         super.init()

@@ -43,3 +43,12 @@ extension Optional {
     }
 }
 //*******************Extension to handle Optional value************************//
+
+
+//MARK: - TableView Tags
+struct TableViewTag {
+    
+    static var categoryTableView = 1
+    static var varientTableView = 2
+    
+}
