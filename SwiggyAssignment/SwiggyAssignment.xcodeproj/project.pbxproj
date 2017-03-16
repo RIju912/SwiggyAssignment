@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA606831E7A665500D42E37 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3EA606821E7A665500D42E37 /* .gitignore */; };
 		3EE639E41E7A63A500C5262B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE639E31E7A63A500C5262B /* AppDelegate.swift */; };
 		3EE639E61E7A63A500C5262B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE639E51E7A63A500C5262B /* ViewController.swift */; };
 		3EE639E91E7A63A500C5262B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE639E71E7A63A500C5262B /* Main.storyboard */; };
@@ -17,13 +18,14 @@
 
 /* Begin PBXFileReference section */
 		2E7BE990647621D259D620F2 /* Pods-SwiggyAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiggyAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiggyAssignment/Pods-SwiggyAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		3EA606821E7A665500D42E37 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3EE639E01E7A63A500C5262B /* SwiggyAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiggyAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EE639E31E7A63A500C5262B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EE639E31E7A63A500C5262B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		3EE639E51E7A63A500C5262B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EE639E81E7A63A500C5262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3EE639EA1E7A63A500C5262B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE639EA1E7A63A500C5262B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		3EE639ED1E7A63A500C5262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3EE639EF1E7A63A500C5262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE639EF1E7A63A500C5262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		61876B49B745A4676E5DD699 /* Pods_SwiggyAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiggyAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB76860CFA58B36159AF737B /* Pods-SwiggyAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiggyAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiggyAssignment/Pods-SwiggyAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +42,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA606811E7A662D00D42E37 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				3EA606821E7A665500D42E37 /* .gitignore */,
+				3EE639EA1E7A63A500C5262B /* Assets.xcassets */,
+				3EE639EF1E7A63A500C5262B /* Info.plist */,
+				3EE639E31E7A63A500C5262B /* AppDelegate.swift */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
 		3EE639D71E7A63A400C5262B = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +74,10 @@
 		3EE639E21E7A63A500C5262B /* SwiggyAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				3EE639E31E7A63A500C5262B /* AppDelegate.swift */,
+				3EA606811E7A662D00D42E37 /* AppResources */,
 				3EE639E51E7A63A500C5262B /* ViewController.swift */,
 				3EE639E71E7A63A500C5262B /* Main.storyboard */,
-				3EE639EA1E7A63A500C5262B /* Assets.xcassets */,
 				3EE639EC1E7A63A500C5262B /* LaunchScreen.storyboard */,
-				3EE639EF1E7A63A500C5262B /* Info.plist */,
 			);
 			path = SwiggyAssignment;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA606831E7A665500D42E37 /* .gitignore in Resources */,
 				3EE639EE1E7A63A500C5262B /* LaunchScreen.storyboard in Resources */,
 				3EE639EB1E7A63A500C5262B /* Assets.xcassets in Resources */,
 				3EE639E91E7A63A500C5262B /* Main.storyboard in Resources */,
@@ -376,6 +388,7 @@
 				3EE639F41E7A63A500C5262B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
