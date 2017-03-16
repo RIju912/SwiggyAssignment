@@ -7,7 +7,35 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class SwiggyCategory: NSObject {
-
+    
+    var groupID: String?
+    var name: String?
+    var variants = [SwiggyVariants]()
+    var selectedVarient: SwiggyVariants?
+    var selectedVarientExclusion: SwiggyExclusionList?
+    
+    init (json: JSON) {
+        
+        super.init()
+        
+        groupID = json["group_id"].stringValue
+        name = json["name"].stringValue
+        
+        let variations = json["variations"].array
+        
+        if let _ = variations {
+            
+            for variantJSON in variations! {
+                
+                let varient = SwiggyVariants(json: variantJSON)
+                variants.append(varient)
+                
+            }
+            
+        }
+        
+    }
 }

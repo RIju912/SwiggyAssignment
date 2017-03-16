@@ -10,4 +10,7 @@ import UIKit
 
 class SwiggyBaseModel: NSObject {
 
+    var categories = [SwiggyCategory]()
+    var exclusions = [[SwiggyExclusionList]]()
+    
 }

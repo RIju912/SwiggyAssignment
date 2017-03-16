@@ -7,7 +7,41 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class SwiggyExclusionList: NSObject {
-
+    
+    var groupID: String?
+    var variationID: String?
+    
+    init (json: JSON) {
+        
+        super.init()
+        
+        groupID = json["group_id"].stringValue
+        variationID = json["variation_id"].stringValue
+        
+    }
+    
+    init (groupID: String?, variationID: String) {
+        
+        super.init()
+        
+        self.groupID = groupID
+        self.variationID = variationID
+        
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        
+        let exclusion = object as? SwiggyExclusionList
+        
+        if self.groupID == exclusion?.groupID && self.variationID == exclusion?.variationID {
+            
+            return true
+        }
+        
+        return false
+        
+    }
 }
